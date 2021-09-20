@@ -219,8 +219,8 @@ h3 {
   background-color: var(--light-color);
   color: black;
   border-radius: 10px;
-  /*box-shadow: 10px 5px 5px rgba(177, 0, 0, 0.5);*/
-  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
+  /*box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);*/
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 .project-item h2 {
   padding: 10px 0;
