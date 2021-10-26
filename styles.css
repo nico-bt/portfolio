@@ -306,3 +306,19 @@ h3 {
     padding: 5px;
   }
 }
+
+/* Max width for ultrawide monitors*/
+@media (min-width: 1900px) {
+  .tools,
+  .projects-menu,
+  .small-projects {
+    width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projects > .project-item {
+    width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
