@@ -48,11 +48,6 @@ img {
 
 .showcase {
   height: 650px;
-  /*background-image: url("./lokaAtSpace.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;*/
-
   background: linear-gradient(
     var(--dark-color),
     var(--secondary-color),
@@ -257,6 +252,19 @@ h3 {
   box-shadow: 0 0 0 0.5em darkred;
   font-size: 1.1rem;
   font-weight: 800;
+}
+
+.small-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.small-projects .project-item {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.small-projects .description {
+  width: 100%;
 }
 
 .contact-container {
