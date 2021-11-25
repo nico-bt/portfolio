@@ -9,6 +9,10 @@
   --error-color: #d9534f;
 }
 
+/* =========================================== */
+/* General styles */
+/* =========================================== */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -46,6 +50,9 @@ img {
   width: 100%;
 }
 
+/* =========================================== */
+/* Classes */
+/* =========================================== */
 .showcase {
   height: 650px;
   background: linear-gradient(
@@ -277,19 +284,65 @@ h3 {
   margin: 25px 0;
 }
 
-.colGrid {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
+.form-container {
+  max-width: 650px;
+  color: white;
+}
+.form-container h3 {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid white;
+}
+.form-container input,
+.form-container textarea {
+  padding: 10px;
+  margin: 6px;
+  border-radius: 10px;
 }
 
+.contact-form-btn {
+  display: block;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  color: white;
+  background: linear-gradient(var(--secondary-color), var(--dark-color));
+  box-shadow: 2px 3px 3px rgba(200, 200, 200, 0.5);
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.contact-form-btn:hover {
+  cursor: pointer;
+}
+.contact-form-btn:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+textarea {
+  font-family: sans-serif;
+  color: black;
+  font-size: 1rem;
+}
 .form-control {
   display: flex;
   flex-direction: column;
 }
 
+/* ===================================== */
+/* @media*/
+/* ===================================== */
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@media (max-width: 480px) {
+  .project-item,
+  .small-projects {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -301,7 +354,6 @@ h3 {
   .project-item {
     margin: 0px;
   }
-
   .projects {
     padding: 5px;
   }

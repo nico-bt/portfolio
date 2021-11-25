@@ -125,10 +125,10 @@
 
             <div class="project-item">
                 <div class="description">
-                    <h2>Game: Guess the RGB color</h2>
+                    <h2>Guess the RGB color</h2>
                     <div>
                         <p>Between 12 random generated colors you have to guess wich one is the mentioned RGB</p>
-                        <p>Simple game using only: html - css - JS</p>
+                        <p>html - css - JS</p>
                     </div>
                     <div class="btn-container">
                         <a class="btn" href="https://nico-bt.github.io/rgb-color/" target="_blank" rel="noreferrer noopener">Live
@@ -194,7 +194,9 @@
     </div>
 
     <div class="contact-container">
-        <div class="colGrid">
+        <div class="form-container">
+            <h3>Contact me</h3>
+            <p>Feel free to give some feedback and say hi</p>
             <form class="form-control" action="https://formsubmit.co/nico-battaglia@hotmail.com" method="POST">
                 <!-- Honey pot -->
                 <input type="text" name="_honey" style="display:none">
@@ -205,10 +207,10 @@
                 <!-- Thank you message -->
                 <input type="hidden" name="_next" value="https://nico-bt.github.io/portfolio/thanks">
 
-                <input type="text" placeholder="Name" id="name" name="name" required>
+                <input type="text" placeholder="Your name" id="name" name="name" required>
                 <input type="email" placeholder="Your email" id="email" name="email" required>
-                <textarea type="text" cols="30" rows="6" placeholder="Message" id="message" name="message"></textarea>
-                <input type="submit" value="Send Message">
+                <textarea type="text" cols="30" rows="6" placeholder="Message" id="message" name="message" required></textarea>
+                <input type="submit" class="contact-form-btn" value="Send Message">
             </form>
         </div>
     </div>
