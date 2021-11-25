@@ -322,3 +322,38 @@ h3 {
     margin-right: auto;
   }
 }
+
+/* ================================================ */
+/* Thanks Page */
+/* ================================================ */
+.thanks-container {
+  padding: 3%;
+  background-image: url("img/nasa.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 100vh;
+  margin: 0;
+  /* max-width: 1800px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.thanks {
+  display: flex;
+  /* justify-content: center; */
+}
+.thanks-link {
+  color: white;
+  margin-bottom: 20px;
+}
+.thanks-link a {
+  color: white;
+  font-size: 1.2rem;
+}
+.thanks img {
+  max-width: 750px;
+  opacity: 0.85;
+}
