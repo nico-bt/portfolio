@@ -19,6 +19,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   font-family: "Lato", sans-serif;
@@ -100,6 +104,42 @@ h3 {
 }
 .smaller {
   font-size: 0.5em;
+}
+
+.links {
+  margin-top: 26px;
+}
+.links a {
+  margin-right: 36px;
+  color: white;
+}
+.links a:hover {
+  color: black;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 70px;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -35px; /* Use half of the width to center the tooltip */
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  /* padding: 0; */
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 .tools-container {
@@ -328,6 +368,13 @@ textarea {
 .form-control {
   display: flex;
   flex-direction: column;
+}
+
+.footer-form {
+  margin-top: 35px;
+  font-size: 0.9rem;
+  padding: 6px;
+  /* text-align: center; */
 }
 
 /* ===================================== */
