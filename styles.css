@@ -387,7 +387,13 @@ textarea {
   color: white;
 }
 .form-links i {
-  margin-top: 75%;
+  margin-top: 40%;
+  padding: 8px;
+  border-radius: 6px;
+}
+.form-links i:hover {
+  background: white;
+  color: black;
 }
 
 /* ===================================== */
