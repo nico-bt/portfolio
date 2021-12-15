@@ -395,7 +395,10 @@ textarea {
   background: white;
   color: black;
 }
-
+.form-links .tooltiptext {
+  /* re-adjust de distance of tooltip text in bottom links */
+  bottom: 85%;
+}
 /* ===================================== */
 /* @media*/
 /* ===================================== */
