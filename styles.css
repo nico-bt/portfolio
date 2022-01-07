@@ -53,6 +53,9 @@ p {
 img {
   width: 100%;
 }
+.center {
+  text-align: center;
+}
 
 /* =========================================== */
 /* Classes */
@@ -215,7 +218,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  padding: 0 40px 120px;
+  padding: 0 40px 80px;
 }
 
 .projects-menu {
@@ -253,7 +256,7 @@ h3 {
   box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 .project-item h2 {
-  padding: 6px 0;
+  padding: 4px 0;
   margin-bottom: 10px;
   border-bottom: 1px solid darkred;
 }
@@ -265,9 +268,16 @@ h3 {
   margin: 0 auto;
   padding: 20px;
 }
-.btn-container {
-  margin-top: 30px;
+.inside-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
+.btn-container {
+  margin-top: 20px;
+}
+
 .btn {
   display: block;
   width: 90%;
