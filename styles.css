@@ -165,7 +165,6 @@ h3 {
 .tools h3 {
   font-size: 3rem;
   background: linear-gradient(darkred, #760000, #4c0000);
-
   color: white;
   padding: 12px;
   margin: 0;
@@ -191,7 +190,7 @@ h3 {
   color: black;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  padding: 18px;
   margin: 10px;
 }
 
