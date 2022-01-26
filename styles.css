@@ -5,8 +5,6 @@
   --secondary-color: #1c3fa8;
   --dark-color: #002240;
   --light-color: #f4f4f4;
-  --success-color: #5cb85c;
-  --error-color: #d9534f;
 }
 
 /* =========================================== */
@@ -399,14 +397,10 @@ textarea {
   /* re-adjust de distance of tooltip text in bottom links */
   bottom: 85%;
 }
+
 /* ===================================== */
 /* @media*/
 /* ===================================== */
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
-  }
-}
 
 @media (max-width: 480px) {
   .project-item,
@@ -441,6 +435,24 @@ textarea {
     width: 1800px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* ================================================ */
+/* Animation */
+/* ================================================ */
+.links,
+.miniBio {
+  animation: fadeInUp 2s;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
