@@ -18,7 +18,7 @@
             <ul>
                 <li>I've studied Industrial Engineering and worked in the electricity distribution sector for +6 years.
                 </li>
-                <li>Switching to Web Development. Also interested in AI.</li>
+                <li>Switching to Web Development (MERN stack). Also interested in AI.</li>
                 <li>I'm from Buenos Aires, Argentina</li>
             </ul>
         </div>
@@ -97,25 +97,26 @@
     <div class="projects" id="projects">
 
         <h1 class="projects-menu">Projects</h1>
-
-        <div class="project-item">
-            <div class="description">
-                <h2>BAires App</h2>
-                <!-- <img class="project-img" src="/img/baires.png"> -->
-                <div>
-                    <p>CRUD application with login and authentication, where you can see different places to visit in Buenos Aires, Argentina.</p>
-                    <p>If you create an user and log in, then you can add places, comments (edit/delete both) and vote up/down.</p>
-                </div>
-                <div>
-                    <p>HTML - CSS (+Bootstrap) - JS - Node - Express - MongoDB</p>
-                </div>
-                <div class="btn-container">
-                    <div class="small">
-                        First load may take a few seconds.<br> 
-                        Deployed using Heroku Free apps (goes to sleep automatically after 30 mins of inactivity)
+        <div class="big-project">
+            <div class="project-item">
+                <div class="description">
+                    <h2>BAires App</h2>
+                    <!-- <img class="project-img" src="/img/baires.png"> -->
+                    <div>
+                        <p>CRUD application with login and authentication, where you can see different places to visit in Buenos Aires, Argentina.</p>
+                        <p>If you create an user and log in, then you can add places, comments (edit/delete both) and vote up/down.</p>
                     </div>
-                    <a class="btn" href="http://baires-app.herokuapp.com/" target="_blank" rel="noreferrer noopener">Live Project</a>
-                    <a class="btn" href="https://github.com/nico-bt/BAires" target="_blank" rel="noreferrer noopener">Github</a>
+                    <div>
+                        <p class="stack">HTML - CSS (+Bootstrap) - JS - Node - Express - MongoDB</p>
+                    </div>
+                    <div class="btn-container margin-top-25">
+                        <div class="small">
+                            First load may take a few seconds.<br> 
+                            Deployed using Heroku Free apps (goes to sleep automatically after 30 mins of inactivity)
+                        </div>
+                        <a class="btn" href="http://baires-app.herokuapp.com/" target="_blank" rel="noreferrer noopener">Live Project</a>
+                        <a class="btn" href="https://github.com/nico-bt/BAires" target="_blank" rel="noreferrer noopener">Github</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,28 +129,14 @@
                     <div class="inside-flex">
                         <div>
                             <p>Restaurant Menu.</p> 
-                            <p>You can select different categories</p>
+                            <p>You can select between different categories.</p>
                         </div>
-                        <p>HTML - CSS - JS - React</p>
+                        <div class="small">First load may take a few seconds. Deployed using Heroku Free apps.</div>
+                        <p class="stack">HTML - CSS - JS - React</p>
                     </div>
                     <div class="btn-container">
-                        <!-- <div>First load may take a few seconds</div> -->
                         <a class="btn" href="https://menu-parrilla.herokuapp.com/" target="_blank" rel="noreferrer noopener">Live Project</a>
                         <a class="btn" href="https://github.com/nico-bt/Menu_Parrilla" target="_blank" rel="noreferrer noopener">Github</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="description">
-                    <h2>Guess the RGB color</h2>
-                    <div class="inside-flex">
-                        <p>Between 12 random generated colors you have to guess wich one is the mentioned RGB</p>
-                        <p>HTML - CSS - JS</p>
-                    </div>
-                    <div class="btn-container">
-                        <a class="btn" href="https://nico-bt.github.io/rgb-color/" target="_blank" rel="noreferrer noopener">LiveProject</a>
-                        <a class="btn" href="https://github.com/nico-bt/rgb-color" target="_blank" rel="noreferrer noopener">Github</a>
                     </div>
                 </div>
             </div>
@@ -160,13 +147,29 @@
                     <div class="inside-flex">
                         <div>
                             <p>Create a reading list adding book titles.</p>
-                            <p>Some default books added to show content.</p>
+                            <p>The app uses local storage to save the list.</p>
                         </div>
-                        <p>HTML - CSS - JS</p>
+                        <p class="stack">HTML - CSS - JS</p>
                     </div>
                     <div class="btn-container">
-                        <a class="btn" href="https://nico-bt.github.io/my-reading-list/" target="_blank" rel="noreferrer noopener">Live Project</a>
-                        <a class="btn" href="https://github.com/nico-bt/my-reading-list" target="_blank" rel="noreferrer noopener">Github</a>
+                        <a class="btn" href="https://nico-bt.github.io/my-reading-list/" target="_blank"
+                            rel="noreferrer noopener">Live Project</a>
+                        <a class="btn" href="https://github.com/nico-bt/my-reading-list" target="_blank"
+                            rel="noreferrer noopener">Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="description">
+                    <h2>Guess the RGB color</h2>
+                    <div class="inside-flex">
+                        <p>Between 12 random generated colors you have to guess wich one is the mentioned RGB.</p>
+                        <p class="stack">HTML - CSS - JS</p>
+                    </div>
+                    <div class="btn-container">
+                        <a class="btn" href="https://nico-bt.github.io/rgb-color/" target="_blank" rel="noreferrer noopener">LiveProject</a>
+                        <a class="btn" href="https://github.com/nico-bt/rgb-color" target="_blank" rel="noreferrer noopener">Github</a>
                     </div>
                 </div>
             </div>
@@ -175,8 +178,8 @@
                 <div class="description">
                     <h2>Calculator</h2>
                     <div class="inside-flex">
-                        <p>Calculator with graphical user interface, you can click or use the keyboard</p>
-                        <p>HTML - CSS - JS</p>
+                        <p>Calculator with graphical user interface, you can click or use the keyboard.</p>
+                        <p class="stack">HTML - CSS - JS</p>
                     </div>
                     <div class="btn-container">
                         <a class="btn" href="https://nico-bt.github.io/calculator/" target="_blank" rel="noreferrer noopener">Live Project</a>
@@ -189,8 +192,8 @@
                 <div class="description">
                     <h2>Tic Tac Toe</h2>
                     <div class="inside-flex">
-                        <p>Just the tic-tac-toe game in javascript</p>
-                        <p>HTML - CSS - JS</p>
+                        <p>Just the tic-tac-toe game in javascript.</p>
+                        <p class="stack">HTML - CSS - JS</p>
                     </div>
                     <div class="btn-container">
                         <a class="btn" href="https://nico-bt.github.io/tic-tac-toe/" target="_blank" rel="noreferrer noopener">Live Project</a>
@@ -242,6 +245,7 @@
             </div>
 
         </div>
+    </div>
 
 </body>
 
