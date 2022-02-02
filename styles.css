@@ -54,19 +54,22 @@ img {
 .center {
   text-align: center;
 }
-
+.margin-top-25 {
+  margin-top: 25px;
+}
 /* =========================================== */
 /* Classes */
 /* =========================================== */
 .showcase {
-  height: 650px;
+  min-height: 650px;
+  width: 100%;
   background: linear-gradient(
     var(--dark-color),
     var(--secondary-color),
     var(--primary-color)
   );
   color: #fff;
-  padding: 0 20px 25px;
+  padding: 0 5% 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,6 +87,7 @@ h3 {
 }
 .showcase li {
   font-size: 1.25em;
+  margin-bottom: 10px;
 }
 
 .showcase::after {
@@ -108,10 +112,15 @@ h3 {
 }
 
 .links {
-  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 36px;
+  margin-top: 42px;
+  margin-bottom: 20px;
 }
 .links a {
-  margin-right: 36px;
+  /* margin-right: 36px; */
   color: white;
 }
 .links a:hover {
@@ -202,9 +211,6 @@ h3 {
 }
 
 .projects {
-  /*background-color: var(--primary-color);*/
-  /*background: linear-gradient(90deg, black, darkred, #ec0623);*/
-  /*background: linear-gradient(90deg, #190a05, #4c0000, #760000, darkred);*/
   background-image: url(img/wall.jpg);
   background-repeat: no-repeat;
   background-position: top;
@@ -214,7 +220,7 @@ h3 {
   color: #fff;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 20px;
   padding: 0 40px 80px;
 }
 
@@ -241,15 +247,19 @@ h3 {
   object-position: top;
 }
 
+.big-project {
+  display: flex;
+  justify-content: center;
+}
+
 .project-item {
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1.5rem;
-  margin: 25px;
+  gap: 25px;
   background-color: var(--light-color);
   color: black;
   border-radius: 10px;
-  /*box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);*/
   box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 .project-item h2 {
@@ -270,9 +280,6 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-}
-.btn-container {
-  margin-top: 20px;
 }
 
 .btn {
@@ -312,6 +319,15 @@ h3 {
   width: 100%;
 }
 
+.stack {
+  /* border-bottom: 1px solid lightgray; */
+  /* border-top: 1px solid lightgray; */
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
 .contact-container {
   padding: 3%;
   background-image: url("img/nasa.png");
@@ -348,7 +364,7 @@ h3 {
   border: none;
   padding: 0.25rem 0.5rem;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .contact-form-btn:hover {
   cursor: pointer;
@@ -358,10 +374,12 @@ h3 {
   box-shadow: none;
 }
 
-textarea {
-  font-family: sans-serif;
+textarea,
+input {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: black;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  color: black;
 }
 .form-control {
   display: flex;
@@ -369,10 +387,8 @@ textarea {
 }
 
 .footer-form {
-  /* margin-top: 35px; */
   font-size: 0.9rem;
   padding: 6px;
-  /* text-align: center; */
 }
 .form-links {
   display: flex;
@@ -403,9 +419,19 @@ textarea {
 /* ===================================== */
 
 @media (max-width: 480px) {
+  .projects,
   .project-item,
   .small-projects {
     grid-template-columns: 1fr;
+  }
+  .projects-menu {
+    margin: 12px 0;
+  }
+  .showcase h1 {
+    font-size: 3.2rem;
+  }
+  .showcase h3 {
+    font-size: 2rem;
   }
 }
 
@@ -426,11 +452,8 @@ textarea {
 @media (min-width: 1900px) {
   .tools,
   .projects-menu,
-  .small-projects {
-    width: 1800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  .small-projects,
+  .contact-container,
   .projects > .project-item {
     width: 1800px;
     margin-left: auto;
