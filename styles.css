@@ -433,6 +433,13 @@ input {
   .showcase h3 {
     font-size: 2rem;
   }
+  .card {
+    padding: 6px 14px;
+    margin: 6px;
+  }
+  .card h4 {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -445,6 +452,9 @@ input {
   }
   .projects {
     padding: 5px;
+  }
+  .card h4 {
+    font-size: 18px;
   }
 }
 
