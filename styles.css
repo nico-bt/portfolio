@@ -159,6 +159,7 @@ h3 {
   background-position: center;
   background-size: cover;
   margin-bottom: 75px;
+  min-height: 500px;
 }
 .tools {
   border-radius: 12px;
@@ -182,9 +183,11 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   padding: 12px;
   background-color: rgba(2, 2, 2, 0.6);
   border-radius: 0 0 10px 10px;
+  min-height: 240px;
 }
 
 .card {
@@ -204,6 +207,10 @@ h3 {
 .card h4 {
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+.card img {
+  width: 32px;
 }
 
 .card:hover {
@@ -248,8 +255,11 @@ h3 {
 }
 
 .big-project {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(400px, 950px);
   justify-content: center;
+  gap: 30px;
+  align-items: center;
 }
 
 .project-item {
@@ -273,7 +283,7 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 32px;
 }
 .inside-flex {
   display: flex;
