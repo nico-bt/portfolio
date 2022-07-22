@@ -431,7 +431,8 @@ input {
 @media (max-width: 480px) {
   .projects,
   .project-item,
-  .small-projects {
+  .small-projects,
+  .big-project {
     grid-template-columns: 1fr;
   }
   .projects-menu {
