@@ -69,7 +69,7 @@ img {
     var(--primary-color)
   );
   color: #fff;
-  padding: 0 5% 25px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
