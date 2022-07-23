@@ -308,12 +308,20 @@ h3 {
   font-size: 1rem;
   transition: all 0.3s linear;
 }
-.btn:hover {
-  /*background: linear-gradient(90deg, #ec0623, #ff8717);*/
-  animation: pulse 0.3s;
-  box-shadow: 0 0 0 0.5em darkred;
-  font-size: 1.1rem;
+.btn:hover, .btn:focus {
+  animation: hover-btn 0.5s infinite alternate;
+  /* box-shadow: 0 0 0 0.5em darkred; */
+  /* font-size: 1.1rem; */
   font-weight: 800;
+}
+
+@keyframes hover-btn {
+  from {}
+  to{
+    transform: scale(112%);
+    box-shadow: 12px 12px 18px black;
+    background-color: rgb(77, 0, 0);
+  }
 }
 
 .small-projects {
