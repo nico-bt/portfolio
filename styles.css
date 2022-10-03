@@ -256,7 +256,7 @@ h3 {
 
 .big-project {
   display: grid;
-  grid-template-columns: minmax(300px, 900px);
+  grid-template-columns: minmax(300px, 750px);
   justify-content: center;
   gap: 30px;
   /* align-items: center; */
