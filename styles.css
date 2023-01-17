@@ -292,6 +292,25 @@ h3 {
   height: 100%;
 }
 
+.feed-your-mind_data-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+.feed-your-mind_data-grid ul {
+  list-style-type: disc;
+  margin-left: 50px;
+}
+.feed-your-mind_data-grid li {
+  line-height: 1.8;
+}
+
+.feed-your-mind_data-grid img {
+  max-width: 350px;
+  margin-inline: auto;
+}
+
 .btn {
   display: block;
   width: 90%;
