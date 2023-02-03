@@ -292,7 +292,7 @@ h3 {
   height: 100%;
 }
 
-.feed-your-mind_data-grid{
+.feed-your-mind_data-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 18px;
@@ -335,8 +335,9 @@ h3 {
 }
 
 @keyframes hover-btn {
-  from {}
-  to{
+  from {
+  }
+  to {
     transform: scale(112%);
     box-shadow: 12px 12px 18px black;
     background-color: rgb(77, 0, 0);
@@ -387,7 +388,7 @@ h3 {
 .form-container input,
 .form-container textarea {
   padding: 10px;
-  margin: 6px;
+  margin: 6px 0;
   border-radius: 10px;
 }
 
