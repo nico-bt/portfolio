@@ -497,6 +497,12 @@ input {
   }
 }
 
+@media (max-width: 1050px) {
+  .projects-menu {
+    margin-inline: 0;
+  }
+}
+
 /* Max width for ultrawide monitors*/
 @media (min-width: 1900px) {
   .tools,
