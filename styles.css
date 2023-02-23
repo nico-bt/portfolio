@@ -407,10 +407,6 @@ h3 {
 .contact-form-btn:hover {
   cursor: pointer;
 }
-.contact-form-btn:active {
-  transform: translateY(4px);
-  box-shadow: none;
-}
 
 textarea,
 input {
