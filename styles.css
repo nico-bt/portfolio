@@ -88,6 +88,12 @@ h3 {
 .showcase li {
   font-size: 1.25em;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media (max-width: 617px) {
+  .showcase li {
+    text-align: start;
+  }
 }
 
 .showcase::after {
