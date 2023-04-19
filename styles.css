@@ -78,15 +78,15 @@ img {
 }
 
 .showcase h1 {
-  font-size: 4.5rem;
+  font-size: 4.75rem;
 }
 
 h3 {
   margin: 12px 10px;
-  font-size: 2.5em;
+  font-size: 2.75em;
 }
 .showcase li {
-  font-size: 1.25em;
+  font-size: 1.35em;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -473,6 +473,9 @@ input {
   }
   .showcase h3 {
     font-size: 2rem;
+  }
+  .showcase li {
+    font-size: 1.25em;
   }
   .card {
     padding: 6px 14px;
