@@ -63,11 +63,7 @@ img {
 .showcase {
   min-height: 650px;
   width: 100%;
-  background: linear-gradient(
-    var(--dark-color),
-    var(--secondary-color),
-    var(--primary-color)
-  );
+  background: linear-gradient(var(--dark-color), var(--secondary-color), var(--primary-color));
   color: #fff;
   padding: 25px;
   display: flex;
@@ -79,6 +75,7 @@ img {
 
 .showcase h1 {
   font-size: 4.75rem;
+  letter-spacing: 1px;
 }
 
 h3 {
@@ -126,7 +123,6 @@ h3 {
   margin-bottom: 20px;
 }
 .links a {
-  /* margin-right: 36px; */
   color: white;
 }
 .links a:hover {
@@ -243,8 +239,6 @@ h3 {
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  /*border-bottom: 1px solid white;*/
-  /*background-color: var(--secondary-color);*/
   background: linear-gradient(var(--dark-color), black);
   color: white;
   padding: 15px;
@@ -262,7 +256,7 @@ h3 {
 
 .big-project {
   display: grid;
-  grid-template-columns: minmax(300px, 900px);
+  grid-template-columns: minmax(300px, 700px);
   justify-content: center;
   gap: 30px;
   /* align-items: center; */
@@ -320,12 +314,11 @@ h3 {
 .btn {
   display: block;
   width: 90%;
+  max-width: 450px;
   margin: 1rem auto 0 auto;
-
   color: white;
   letter-spacing: 0.1rem;
   text-align: center;
-  /*background: transparent;*/
   background: darkred;
   border: 1px solid red;
   padding: 0.25rem 0.5rem;
@@ -335,8 +328,6 @@ h3 {
 }
 .btn:hover {
   animation: hover-btn 0.5s infinite alternate;
-  /* box-shadow: 0 0 0 0.5em darkred; */
-  /* font-size: 1.1rem; */
   font-weight: 800;
 }
 
@@ -364,8 +355,6 @@ h3 {
 }
 
 .stack {
-  /* border-bottom: 1px solid lightgray; */
-  /* border-top: 1px solid lightgray; */
   font-weight: bolder;
   margin-top: 20px;
   margin-bottom: 0;
@@ -550,16 +539,13 @@ input {
   background-size: contain;
   height: 100vh;
   margin: 0;
-  /* max-width: 1800px; */
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 
 .thanks {
   display: flex;
-  /* justify-content: center; */
 }
 .thanks-link {
   color: white;
