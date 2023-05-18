@@ -109,6 +109,11 @@ h3 {
 @media (min-width: 1600px) {
   .showcase::after {
     bottom: -55px;
+    height: 80px;
+    transform: skewY(-1deg);
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
   }
 }
 
