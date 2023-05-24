@@ -109,7 +109,7 @@ h3 {
 @media (min-width: 1600px) {
   .showcase::after {
     bottom: -55px;
-    height: 80px;
+    height: 90px;
     transform: skewY(-1deg);
     -webkit-transform: skewY(-2deg);
     -moz-transform: skewY(-2deg);
@@ -172,6 +172,11 @@ h3 {
   background-size: cover;
   margin-bottom: 75px;
   min-height: 500px;
+}
+@media (min-width: 1600px) {
+  .tools-container {
+    min-height: 560px;
+  }
 }
 .tools {
   border-radius: 12px;
