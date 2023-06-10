@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="./img/title.svg" type="image/x-icon" />
     <title>Portfolio | Nico Battaglia</title>
     <script src="https://kit.fontawesome.com/721c7eae16.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script defer src="app.js"></script>
   </head>
 
   <body>
@@ -59,396 +62,396 @@
       <div class="tools">
         <h3>Tools <span class="smaller">(for now...)</span></h3>
         <div class="flexContainer">
-          <div class="card">
+          <div class="tools-card">
             <h4>HTML</h4>
             <i class="fab fa-html5 fa-2x"></i>
           </div>
-          <div class="card">
+          <div class="tools-card">
             <h4>CSS</h4>
             <i class="fab fa-css3-alt fa-2x"></i>
           </div>
-          <div class="card">
+          <div class="tools-card">
             <h4>Bootstrap</h4>
             <i class="fab fa-bootstrap fa-2x"></i>
           </div>
-          <div class="card">
+          <div class="tools-card">
             <h4>Material-UI</h4>
             <img src="./img/material-ui.svg" alt="Material-ui logo" />
           </div>
-          <div class="card">
+          <div class="tools-card">
             <h4>Javascript</h4>
             <i class="fab fa-js-square fa-2x"></i>
           </div>
-          <div class="card">
+          <div class="tools-card">
             <h4>React</h4>
             <i class="fab fa-react fa-2x"></i>
           </div>
-          <div class="card">
+          <div class="tools-card">
             <h4>Node</h4>
             <i class="fab fa-node fa-2x"></i>
           </div>
-          <div class="card">
+          <div class="tools-card">
             <h4>Express</h4>
             <img src="./img/express.svg" alt="Express logo" />
           </div>
-          <div class="card">
+          <div class="tools-card">
             <h4>MongoDB</h4>
             <img src="./img/mongodb.svg" alt="MongoDB logo" />
           </div>
         </div>
-        <!-- <div class="flexContainer">
-                <div class="card">
-                    <h4>Python</h4>
-                    <i class="fab fa-python fa-2x"></i>
-                </div>
-                <div class="card">
-                    <h4>Pandas</h4>
-                </div>
-                <div class="card">
-                    <h4>ScikitLearn</h4>
-                </div>
-            </div> -->
       </div>
     </div>
 
     <div class="projects" id="projects">
       <h1 class="projects-menu">Projects</h1>
-      <div class="big-project">
-        <div class="project-item">
-          <div class="description">
-            <h2>Free Market House</h2>
-            <div>
-              <p>If you create an user and log in, you can publish houses to rent/sell.</p>
-              <p>Or just explore what is already published</p>
-            </div>
-            <div>
-              <p class="stack">React - Firebase</p>
-            </div>
-            <div class="btn-container margin-top-25">
+
+      <div class="projects-grid">
+        <div class="card stacked">
+          <img
+            src="img/free-market.png"
+            alt="screen img of free-market project"
+            class="card__img"
+          />
+          <div class="card__content">
+            <h2 class="card__title">Free Market House</h2>
+            <p class="card__description">Rent/Sell your home</p>
+
+            <p class="card__description techs">
+              <span>React</span>
+              <span>Firebase</span>
+            </p>
+
+            <div class="btn-container">
               <a
-                class="btn"
-                href="https://free-markethouse.vercel.app/"
-                target="_blank"
-                rel="noreferrer noopener"
-                >Live Project</a
-              >
-              <a
-                class="btn"
+                class="btn btn-github"
                 href="https://github.com/nico-bt/house-marketplace"
                 target="_blank"
                 rel="noreferrer noopener"
                 >Github</a
               >
-            </div>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="description">
-            <h2>My Reading List</h2>
-            <div>
-              <p>You can add, edit and delete books to read to your personal list.</p>
-              <p>Choose to start with some books recomendations or with an empty list.</p>
-            </div>
-            <div>
-              <p class="stack">MongoDB - Express - React - Node</p>
-            </div>
-            <div class="btn-container margin-top-25">
-              <div class="small">
-                First load may take a few seconds.<br />
-                Deployed using "free apps" goes to sleep after 30 mins of inactivity
-              </div>
               <a
-                class="btn"
-                href="https://rich-puce-wasp-tux.cyclic.app/"
+                class="btn btn-live"
+                href="https://free-markethouse.vercel.app/"
                 target="_blank"
                 rel="noreferrer noopener"
                 >Live Project</a
               >
+            </div>
+          </div>
+        </div>
+
+        <div class="card stacked">
+          <img
+            src="img/readingList.png"
+            alt="screen img of readingList project"
+            class="card__img"
+          />
+          <div class="card__content">
+            <h2 class="card__title">My Reading List</h2>
+
+            <p class="card__description">Fullstack CRUD with Auth</p>
+
+            <p class="card__description techs">
+              <span>React</span>
+              <span>Node</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+            </p>
+
+            <div class="btn-container">
               <a
-                class="btn"
+                class="btn btn-github"
                 href="https://github.com/nico-bt/readme-trackr"
                 target="_blank"
                 rel="noreferrer noopener"
                 >Github</a
               >
+              <a
+                class="btn btn-live"
+                href="https://rich-puce-wasp-tux.cyclic.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Live Project</a
+              >
             </div>
           </div>
         </div>
 
-        <!-- <div class="project-item">
-          <div class="description">
-            <h2>BAires App</h2>
-            <div>
-              <p>
-                You can see different places to visit in Buenos Aires,
-                Argentina.
-              </p>
-              <p>
-                If you create an user and log in, then you can add places (and
-                edit/delete them).
-              </p>
-            </div>
-            <div>
-              <p class="stack">
-                HTML - CSS (+Bootstrap) - Node - Express - MongoDB
-              </p>
-            </div>
-            <div class="btn-container margin-top-25">
-              <div class="small">
-                First load may take a few seconds.<br />
-                Deployed using "free apps" goes to sleep after 30 mins of
-                inactivity
-              </div>
+        <div class="card stacked">
+          <img
+            src="img/market.jpeg"
+            alt="marketplace, showing list of electronic items"
+            class="card__img"
+          />
+          <div class="card__content">
+            <h2 class="card__title">Market Points</h2>
+
+            <p class="card__description">Challenge taken from the web</p>
+
+            <p class="card__description techs">
+              <span>React</span>
+              <span>CSS</span>
+            </p>
+
+            <div class="btn-container">
               <a
-                class="btn"
-                href="https://lovely-duck-tuxedo.cyclic.app/"
-                target="_blank"
-                rel="noreferrer noopener"
-                >Live Project</a
-              >
-              <a
-                class="btn"
-                href="https://github.com/nico-bt/BAires"
+                class="btn btn-github"
+                href="https://github.com/nico-bt/aerolab-marketpoints-localVersion"
                 target="_blank"
                 rel="noreferrer noopener"
                 >Github</a
               >
-            </div>
-          </div>
-        </div> -->
-
-        <div class="project-item">
-          <div class="description">
-            <h2>Feed your mind</h2>
-
-            <div>
-              <p>Suscription to a reading platform, using Stripe API to process payments.</p>
-              <div class="feed-your-mind_data-grid">
-                <div>
-                  <ul>
-                    <li>Basic Plan shows 2 articles</li>
-                    <li>Standard Plan shows 4 articles</li>
-                    <li>Deluxe Plan shows 6 articles</li>
-                  </ul>
-                  <p>Payments are in test mode.</p>
-                  <p>When asked for your credit card number, enter this generic card:</p>
-                  <p class="center">4242 4242 4242 4242</p>
-                </div>
-                <img src="./img/pagoTarjeta.png" alt="pago con tarjeta" />
-              </div>
-            </div>
-
-            <div>
-              <p class="stack">MongoDB - Express - React - Node</p>
-            </div>
-            <div class="btn-container margin-top-25">
               <a
-                class="btn"
-                href="https://suscription-app.vercel.app/"
+                class="btn btn-live"
+                href="https://marketpoints-nico-bt.vercel.app/"
                 target="_blank"
                 rel="noreferrer noopener"
                 >Live Project</a
               >
+            </div>
+          </div>
+        </div>
+
+        <div class="card stacked">
+          <img
+            src="img/feed-your-mind.png"
+            alt="screen img of the feed your mind project"
+            class="card__img"
+          />
+          <div class="card__content">
+            <h2 class="card__title">Feed your mind</h2>
+            <p class="card__description">Subscription using Stripe API</p>
+
+            <p class="card__description techs">
+              <span>React</span>
+              <span>Node</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+            </p>
+
+            <div class="btn-container">
               <a
-                class="btn"
+                class="btn btn-github"
                 href="https://github.com/nico-bt/suscription-app"
                 target="_blank"
                 rel="noreferrer noopener"
                 >Github</a
               >
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="project-item">
-                <div class="description">
-                    <h2>Blog App</h2>
-                    <div>
-                        <p>CRUD application to manage your own blog</p>
-                        <p>Log in with: </p> 
-                        <p class="center"> Email: <b>ncl.battaglia@gmail.com</b></p>
-                        <p class="center"> Password: <b>admin1234</b> </p>
-                        <p class="center">Once you are logged in, you can add, edit and delete blogs</p>
-                    </div>
-                    <div>
-                        <p class="stack">HTML - CSS - Node - Express - MongoDB</p>
-                    </div>
-                    <div class="btn-container margin-top-25">
-                        <div class="small">
-                            First load may take a few seconds.<br> 
-                            Deployed using "free apps" goes to sleep after 30 mins of inactivity
-                        </div>
-                        <a class="btn" href="https://brainy-culottes-elk.cyclic.app/" target="_blank" rel="noreferrer noopener">Live Project</a>
-                        <a class="btn" href="https://github.com/nico-bt/blogs" target="_blank" rel="noreferrer noopener">Github</a>
-                    </div>
-                </div>
-            </div> -->
-      </div>
-
-      <div class="small-projects">
-        <div class="project-item">
-          <div class="description">
-            <h2>3D World</h2>
-            <div class="inside-flex">
-              <div>
-                <p>Mini space platform in 3D</p>
-                <p>You can move around and explore</p>
-              </div>
-              <p class="stack">HTML - CSS - JS - Three.js</p>
-            </div>
-            <div class="btn-container">
-              <a
-                class="btn"
-                href="https://nico-bt.github.io/threejs-3d-moving/"
-                target="_blank"
-                rel="noreferrer noopener"
+              <a id="feed-your-mind-liveBtn" class="btn btn-live" href="javascript:;"
                 >Live Project</a
-              >
-              <a
-                class="btn"
-                href="https://github.com/nico-bt/threejs-3d-moving"
-                target="_blank"
-                rel="noreferrer noopener"
-                >Github</a
               >
             </div>
           </div>
         </div>
 
-        <div class="project-item">
-          <div class="description">
-            <h2>Time Zones</h2>
-            <div class="inside-flex">
-              <div>
-                <p>Return the current local time for a given timezone</p>
-                <p>Using the WorldTimeAPI</p>
-              </div>
-              <p class="stack">HTML - CSS - JS - React</p>
-            </div>
-            <div class="btn-container">
-              <a
-                class="btn"
-                href="https://timezones-pi.vercel.app/"
-                target="_blank"
-                rel="noreferrer noopener"
-                >Live Project</a
-              >
-              <a
-                class="btn"
-                href="https://github.com/nico-bt/timezones"
-                target="_blank"
-                rel="noreferrer noopener"
-                >Github</a
-              >
-            </div>
-          </div>
-        </div>
+        <div class="card stacked">
+          <img src="img/menu.png" alt="" class="card__img" />
+          <div class="card__content">
+            <h2 class="card__title">Restaurant Menu</h2>
 
-        <div class="project-item">
-          <div class="description">
-            <h2>Menu</h2>
-            <div class="inside-flex">
-              <div>
-                <p>Restaurant Menu.</p>
-                <p>You can select between different categories.</p>
-              </div>
-              <p class="stack">HTML - CSS - JS - React</p>
-            </div>
+            <p class="card__description">Choose food categories</p>
+
+            <p class="card__description techs">
+              <span>React</span>
+            </p>
+
             <div class="btn-container">
               <a
-                class="btn"
-                href="https://nico-bt.github.io/Menu_Parrilla/"
-                target="_blank"
-                rel="noreferrer noopener"
-                >Live Project</a
-              >
-              <a
-                class="btn"
+                class="btn btn-github"
                 href="https://github.com/nico-bt/Menu_Parrilla"
                 target="_blank"
                 rel="noreferrer noopener"
                 >Github</a
               >
+              <a
+                class="btn btn-live"
+                href="https://nico-bt.github.io/Menu_Parrilla/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Live Project</a
+              >
             </div>
           </div>
         </div>
 
-        <div class="project-item">
-          <div class="description">
-            <h2>Guess the RGB color</h2>
-            <div class="inside-flex">
-              <p>
-                Between 12 random generated colors you have to guess wich one is the mentioned RGB.
-              </p>
-              <p class="stack">HTML - CSS - JS</p>
-            </div>
+        <div class="card stacked">
+          <img src="img/ferrari.png" alt="img of a ferrari" class="card__img" />
+          <div class="card__content">
+            <h2 class="card__title">Buy a Ferrari</h2>
+            <p class="card__description">3D advertisement</p>
+
+            <p class="card__description techs">
+              <span>React</span>
+              <span>React-three-fiber</span>
+            </p>
+
             <div class="btn-container">
               <a
-                class="btn"
-                href="https://nico-bt.github.io/rgb-color/"
+                class="btn btn-github"
+                href="https://github.com/nico-bt/ferrari"
                 target="_blank"
                 rel="noreferrer noopener"
-                >LiveProject</a
+                >Github</a
               >
               <a
-                class="btn"
+                class="btn btn-live"
+                href="https://ferrari-nico-bt.vercel.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Live Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card stacked">
+          <img src="img/timezones.png" alt="screen img of timezones web" class="card__img" />
+          <div class="card__content">
+            <h2 class="card__title">Timezones</h2>
+
+            <p class="card__description">Local time for a given zone</p>
+
+            <p class="card__description techs">
+              <span>React</span>
+            </p>
+
+            <div class="btn-container">
+              <a
+                class="btn btn-github"
+                href="https://github.com/nico-bt/timezones"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Github</a
+              >
+              <a
+                class="btn btn-live"
+                href="https://timezones-pi.vercel.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Live Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card stacked">
+          <img src="img/3d-world.png" alt="screen img of the 3D World web" class="card__img" />
+          <div class="card__content">
+            <h2 class="card__title">3D World</h2>
+            <p class="card__description">Move around and explore</p>
+
+            <p class="card__description techs">
+              <span>Javascript</span>
+              <span>Three.js</span>
+            </p>
+
+            <div class="btn-container">
+              <a
+                class="btn btn-github"
+                href="https://github.com/nico-bt/threejs-3d-moving"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Github</a
+              >
+              <a
+                class="btn btn-live"
+                href="https://nico-bt.github.io/threejs-3d-moving/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Live Project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card stacked">
+          <img src="img/rgb.png" alt="screen img guess the rgb color web page" class="card__img" />
+          <div class="card__content">
+            <h2 class="card__title">Guess RGB Color</h2>
+            <p class="card__description">Guess between 12 options</p>
+
+            <p class="card__description techs">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Javascript</span>
+            </p>
+
+            <div class="btn-container">
+              <a
+                class="btn btn-github"
                 href="https://github.com/nico-bt/rgb-color"
                 target="_blank"
                 rel="noreferrer noopener"
                 >Github</a
               >
-            </div>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="description">
-            <h2>Calculator</h2>
-            <div class="inside-flex">
-              <p>Calculator with graphical user interface, you can click or use the keyboard.</p>
-              <p class="stack">HTML - CSS - JS</p>
-            </div>
-            <div class="btn-container">
               <a
-                class="btn"
-                href="https://nico-bt.github.io/calculator/"
+                class="btn btn-live"
+                href="https://nico-bt.github.io/rgb-color/"
                 target="_blank"
                 rel="noreferrer noopener"
                 >Live Project</a
               >
+            </div>
+          </div>
+        </div>
+
+        <div class="card stacked">
+          <img src="img/calculator.png" alt="a calculator" class="card__img" />
+          <div class="card__content">
+            <h2 class="card__title">Calculator</h2>
+            <p class="card__description">Do your math</p>
+
+            <p class="card__description techs">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Javascript</span>
+            </p>
+
+            <div class="btn-container">
               <a
-                class="btn"
+                class="btn btn-github"
                 href="https://github.com/nico-bt/calculator"
                 target="_blank"
                 rel="noreferrer noopener"
                 >Github</a
               >
-            </div>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="description">
-            <h2>Tic Tac Toe</h2>
-            <div class="inside-flex">
-              <p>Just the tic-tac-toe game in javascript.</p>
-              <p class="stack">HTML - CSS - JS</p>
-            </div>
-            <div class="btn-container">
               <a
-                class="btn"
-                href="https://nico-bt.github.io/tic-tac-toe/"
+                class="btn btn-live"
+                href="https://nico-bt.github.io/calculator/"
                 target="_blank"
                 rel="noreferrer noopener"
                 >Live Project</a
               >
+            </div>
+          </div>
+        </div>
+
+        <div class="card stacked">
+          <img src="img/tateti.png" alt="tic tac toe img" class="card__img" />
+          <div class="card__content">
+            <h2 class="card__title">Tic Tac Toe</h2>
+            <p class="card__description">Also "Ta Te Tí"</p>
+
+            <p class="card__description techs">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Javascript</span>
+            </p>
+
+            <div class="btn-container">
               <a
-                class="btn"
-                href="https://github.com/nico-bt/tic-tac-toe"
+                class="btn btn-github"
+                href="https://github.com/nico-bt/calculator"
                 target="_blank"
                 rel="noreferrer noopener"
                 >Github</a
+              >
+              <a
+                class="btn btn-live"
+                href="https://nico-bt.github.io/calculator/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Live Project</a
               >
             </div>
           </div>
@@ -522,6 +525,33 @@
           </a>
         </div>
       </div>
+    </div>
+
+    <!-- Modal mostrando credit card payment para feed your Mind project -->
+    <!--- ------------------------------------------------------------------>
+    <div class="feed-your-mind-modal" id="feed-your-mind-modal">
+      <h2 class="center">Brief comment first</h2>
+      <div class="feed-your-mind_data-grid">
+        <div>
+          <p>Payments are in test mode.</p>
+          <p>When asked for your credit card number, enter this generic card:</p>
+          <p class="center">4242 4242 4242 4242</p>
+          <h4>Plans you can choose:</h4>
+          <ul>
+            <li>Basic: shows 2 articles</li>
+            <li>Standard: shows 4 articles</li>
+            <li>Deluxe: shows 6 articles</li>
+          </ul>
+        </div>
+        <img src="./img/pagoTarjeta.png" alt="pago con tarjeta" />
+      </div>
+      <a
+        id="feed-your-mind-modal-btn"
+        href="https://suscription-app.vercel.app/"
+        target="_blank"
+        rel="noreferrer noopener"
+        >Ok. Take me there</a
+      >
     </div>
   </body>
 </html>
