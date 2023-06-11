@@ -49,6 +49,19 @@ gsap.to(".card", {
   },
 })
 
+// Contact form entrance
+// ---------------------------------------------
+gsap.set(".form-container", { opacity: 0, scale: 0.5 })
+gsap.to(".form-container", {
+  opacity: 1,
+  scale: 1,
+  duration: 2,
+  scrollTrigger: {
+    trigger: "#contact",
+    start: "top 25%",
+  },
+})
+
 // Reemplazando las animaciones hover en css porque entran en conflicto con GSAP
 // ----------------------------------------------------------------------------------
 // Select the element
