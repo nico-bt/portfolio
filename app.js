@@ -46,6 +46,11 @@ gsap.to(".card", {
   scrollTrigger: {
     trigger: ".projects-menu",
     start: "top 20%",
+    onEnter: () =>
+      setTimeout(() => {
+        console.log("Finish anim?")
+        addEventsAfterCardsProjectsAnimationComplete()
+      }, 1600),
   },
 })
 
@@ -80,17 +85,32 @@ toolCards.forEach((card) => {
 
 // Select the element
 const projectCards = document.querySelectorAll(".card")
+const projectsGrid = document.querySelector(".projects-grid")
 
-// Add hover animation
-projectCards.forEach((card) => {
-  card.addEventListener("mouseenter", () => {
-    gsap.to(card, { scale: 1.04, zIndex: 10, duration: 0.05 })
+// Add hover animations after cards projects had entered
+function addEventsAfterCardsProjectsAnimationComplete() {
+  projectsGrid.addEventListener("mouseleave", () => {
+    gsap.to(".projects", { backgroundImage: "url(img/wall.jpg)", duration: 1 })
   })
 
-  card.addEventListener("mouseleave", () => {
-    gsap.to(card, { scale: 1, zIndex: 1, duration: 0.05 })
+  projectCards.forEach((card) => {
+    card.addEventListener("mouseover", () => {
+      gsap.to(".card", { opacity: 0.3, duration: 0, zIndex: 1 })
+      gsap.to(card, {
+        scale: 1.06,
+        duration: 0.05,
+        opacity: 1,
+        zIndex: 10,
+      })
+      gsap.to(".projects", { backgroundImage: "none" })
+    })
+
+    card.addEventListener("mouseleave", () => {
+      gsap.to(".card", { opacity: 1, duration: 0 })
+      gsap.to(card, { scale: 1, duration: 0.05 })
+    })
   })
-})
+}
 
 // Feed your mind modal
 const livePrjBtn = document.querySelector("#feed-your-mind-liveBtn")
