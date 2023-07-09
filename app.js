@@ -48,9 +48,8 @@ gsap.to(".card", {
     start: "top 20%",
     onEnter: () =>
       setTimeout(() => {
-        console.log("Finish anim?")
         addEventsAfterCardsProjectsAnimationComplete()
-      }, 1600),
+      }, 3000),
   },
 })
 
