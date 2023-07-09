@@ -98,7 +98,7 @@ function addEventsAfterCardsProjectsAnimationComplete() {
       gsap.to(".card", { opacity: 0.3, duration: 0, zIndex: 1 })
       gsap.to(card, {
         scale: 1.06,
-        duration: 0.05,
+        duration: 0,
         opacity: 1,
         zIndex: 10,
       })
