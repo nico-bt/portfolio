@@ -1,5 +1,15 @@
 gsap.registerPlugin(ScrollTrigger)
 
+const color1 = "-webkit-linear-gradient(0deg, tomato, #fff200, red)"
+
+// Showcase h1
+// ---------------------------------------------
+gsap.fromTo(
+  ".showcase h1",
+  { backgroundSize: "-100%", background: "transparent", x: -25 },
+  { backgroundSize: "100%", background: color1, duration: 3, x: 0 }
+)
+
 // Tools animation
 // ---------------------------------------------
 gsap.to(".tools", {

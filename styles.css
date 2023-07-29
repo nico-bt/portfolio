@@ -79,7 +79,13 @@ img {
 
 .showcase h1 {
   font-size: 5rem;
+  font-weight: 800;
   letter-spacing: 1px;
+  background: -webkit-linear-gradient(0deg, orange, yellow, red);
+  background-size: auto;
+  background-clip: border-box;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
 }
 
 h3 {
