@@ -98,10 +98,6 @@ const projectsGrid = document.querySelector(".projects-grid")
 
 // Add hover animations after cards projects had entered
 function addEventsAfterCardsProjectsAnimationComplete() {
-  projectsGrid.addEventListener("mouseleave", () => {
-    gsap.to(".projects", { backgroundImage: "url(img/wall.jpg)", duration: 1 })
-  })
-
   projectCards.forEach((card) => {
     card.addEventListener("mouseover", () => {
       gsap.to(".card", { opacity: 0.3, duration: 0, zIndex: 1 })
@@ -111,7 +107,6 @@ function addEventsAfterCardsProjectsAnimationComplete() {
         opacity: 1,
         zIndex: 10,
       })
-      gsap.to(".projects", { backgroundImage: "none" })
     })
 
     card.addEventListener("mouseleave", () => {
